@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Home, ProjectPage } from "./pages";
 import { useDispatch, useSelector } from "react-redux";
-import { setTheme } from "./states";
-import FloatingBtn from "./components/floatingBtn";
 import { Navbar } from "./components";
 
 function App() {
@@ -17,7 +15,6 @@ function App() {
     >
         <Navbar />
 
-      {/* <FloatingBtn /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<ProjectPage />} />
