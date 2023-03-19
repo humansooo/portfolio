@@ -28,19 +28,25 @@ const persistConfig = {
 const persistedReducer = persistReducer(persistConfig, appReducer);
 
 const store = configureStore({
-  reducer: appReducer,
+  reducer: persistedReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: {
+        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+      },
+    }),
 });
 
-// let persistor = persistStore(store);
+let persistor = persistStore(store);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
-      {/* <PersistGate loading={null} persistor={store}> */}
+      <PersistGate loading={null} persistor={persistor}>
         <BrowserRouter>
         <App />
         </BrowserRouter>
-      {/* </PersistGate> */}
+      </PersistGate>
     </Provider>
   </React.StrictMode>
 );
