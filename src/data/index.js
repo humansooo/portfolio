@@ -40,19 +40,19 @@ export const navlinks = [
     },
     {
         title: 'About',
-        path: '/about',
+        path: '/About',
         id: 1,
         data: [],
     },
     {
         title: 'Projects',
-        path: '/projects',
+        path: '/Projects',
         data: projects, 
         id: 2,
     },
     {
         title: 'Contact',
-        path: '/contact',
+        path: '/Contact',
         id: 3,
         data: [],
     },
@@ -60,10 +60,39 @@ export const navlinks = [
 ];
 
 export const aboutMe = {
-    title: 'About Me',
+    title: 'Himanshu Suthar',
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
     image: '/images/1.png',
     skills: ['React', 'Node', 'Solidity'],
     contact: {},
     id: 0,
 };
+
+export const socials = [
+    {
+        title: 'Github',
+        path: 'https://github.com/verareyou',
+        id: 0,
+        logo: 'https://www.svgrepo.com/show/507321/github.svg'
+    },
+    {
+        title: 'Twitter',
+        path: 'https://twitter.com/verareyou',
+        id: 1,
+        logo: 'https://www.svgrepo.com/show/508977/twitter-3.svg'
+    },
+    {
+        title: 'Linkedin',
+        path: 'https://www.linkedin.com/in/hmxnsu/',
+        id: 2,
+        logo: 'https://www.svgrepo.com/show/501245/linkedin.svg'
+    },
+    {
+        title: 'Instagram',
+        path: 'https://www.instagram.com/hmxnsu/',
+        id: 3,
+        logo: 'https://www.svgrepo.com/show/364604/instagram-logo-fill.svg'
+    },
+
+];
+

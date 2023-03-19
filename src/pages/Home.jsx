@@ -11,12 +11,11 @@ function Home() {
 
   return (
     <>
-      <div className="w-full h-full  ">
-        <Navbar />
-        <div className=" h-full w-full mt-4 ">
+      {/* <div className="w-full h-full "> */}
+        <div className=" mt-6 ">
           <AboutBanner />
         </div>
-      </div>
+      {/* </div> */}
     </>
   );
 }
