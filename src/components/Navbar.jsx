@@ -22,7 +22,7 @@ function Navbar() {
 
   return (
     <div className=" flex flex-row max-lg:flex-col justify-between gap-3 ">
-      <div className=" flex flex-row justify-end gap-3  ">
+      <div className=" flex max-sm:hidden flex-row justify-end gap-3  ">
         {socials.map((link) => (
           <Socials key={link.id} data={link} />
         ))}
@@ -30,12 +30,12 @@ function Navbar() {
       <div className=" flex flex-wrap justify-end gap-3 ">
         {navlinks.map((link) => (
           <div
+            key={link.id}
             onClick={() =>
               setIsActive(link.title.toLocaleLowerCase()) + navigate(link.path)
             }
           >
             <NavButton
-              key={link.id}
               isActive={isActive}
               theme={theme}
               text={link.title}

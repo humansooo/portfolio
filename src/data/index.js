@@ -61,7 +61,7 @@ export const navlinks = [
 
 export const aboutMe = {
     title: 'Himanshu Suthar',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
+    description: "Lorem ipsum dolor sit amet fa fagasd asddfag safsadg af  a aah kag sadfhs fjasgjsakf jshlasjglkh consectetur adipisicing elit. Minima, ex.",
     image: '/images/1.png',
     skills: ['React', 'Node', 'Solidity'],
     contact: {},

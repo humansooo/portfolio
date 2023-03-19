@@ -12,12 +12,12 @@ function AboutBanner() {
   }
 
   return (
-    <div style={{background: randomColor()}} className={` w-full h-[300px] overflow-hidden p-8 rounded-[20px] `}>
+    <div style={{background: randomColor()}} className={` w-full h-[700px] overflow-auto p-8 rounded-[20px] `}>
         <div>
             <h1 style={{color: theme.primary}} className=' text-6xl max-md:text-3xl font-[900] '>{aboutMe.title}'</h1>
-
-            
         </div>
+        <div className=' mt-6  '>
+            <h1 style={{color: theme.primary}} className=' text-4xl max-md:text-3xl font-[900] '>{aboutMe.description}'</h1></div>
     </div>
   )
 }
