@@ -13,7 +13,7 @@ function Home() {
 
   return (
     <>
-      {/* <div className="w-full h-full "> */}
+      {/* <div className=" flex sm:flex-col-reverse flex-col "> */}
         <div className=" mt-6 ">
           <AboutBanner />
         </div>
