@@ -1,11 +1,22 @@
 import React from 'react'
 import { aboutMe } from '../data'
+import { useSelector } from 'react-redux'
+
 
 function AboutBanner() {
+  const theme = useSelector((state) => state.theme)
+
+  const randomColor = () => {
+    const colors = ['#ff5757', '#ff9d57', '#9e83ff', '#a4a4a4', '#636793']
+    return colors[Math.floor(Math.random() * colors.length)]
+  }
+
   return (
-    <div className=' w-full  '>
+    <div style={{background: randomColor()}} className={` w-full h-[300px] overflow-hidden p-8 rounded-[20px] `}>
         <div>
-            <h1>{aboutMe.title}</h1>
+            <h1 style={{color: theme.primary}} className=' text-6xl max-md:text-3xl font-[900] '>{aboutMe.title}'</h1>
+
+            
         </div>
     </div>
   )
