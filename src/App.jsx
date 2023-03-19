@@ -13,6 +13,9 @@ function App() {
       style={{ background: theme.primary, color: theme.text }}
       className=" duration-500 p-6 min-h-screen "
     >
+      {/* <head> */}
+
+      {/* </head> */}
         <Navbar />
 
       <Routes>

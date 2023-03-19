@@ -13,6 +13,8 @@ function Home() {
 
   return (
     <>
+    <title>Himanshu Suthar</title>
+
       {/* <div className=" flex sm:flex-col-reverse flex-col "> */}
         <div className=" mt-6 ">
           <AboutBanner />

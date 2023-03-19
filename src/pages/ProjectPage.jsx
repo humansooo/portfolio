@@ -7,6 +7,11 @@ function ProjectPage() {
   return (
     <>
       <div className="mt-6">
+      <head>
+        <title>
+          Projects
+        </title>
+      </head>
         <div
           style={{ background: randomColor().color, color: randomColor().text }}
           className={` w-full min-h-[300px] flex flex-row max-md:flex-col justify-between p-8 rounded-[20px] `}
