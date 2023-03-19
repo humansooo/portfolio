@@ -9,11 +9,11 @@ function NavButton({ theme, to, text, icon, onClick, length, isActive }) {
       style={{ color: theme.lightText }}
       onClick={onClick}
       className={
-        ` gap-2 sm:hover:gap-6 max-sm:text-sm max-sm:gap-1 cursor-pointer text-[16px] max-sm:p-1.5 max-sm:pl-3 duration-500 h-full flex justify-between items-center p-2 sm:hover:pl-5 pl-4 border-[2px] rounded-full ` +
+        ` gap-2 sm:hover:gap-6 max-sm:text-sm max-sm:gap-1 cursor-pointer text-[16px] max-sm:p-1.5 max-sm:pl-3 duration-500 h-full flex justify-between items-center p-2 pl-4 border-[2px] rounded-full ` +
         `${
           theme.mode === "light" ? "border-[#00000056]" : "border-[#ffffff24]"
         } ` +
-        `${!icon && " sm:hover:gap-0 sm:hover:pl-2 pl-[8px] max-sm:pl-[6px] "}`
+        `${!icon ? " sm:hover:gap-0 pl-[8px] max-sm:pl-[6px] " : "sm:hover:pl-5"}`
       }
     >
       <h1>
