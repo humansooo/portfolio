@@ -12,7 +12,7 @@ function AboutBanner() {
   }
 
   return (
-    <div style={{background: randomColor()}} className={` w-full h-[700px] overflow-auto p-8 rounded-[20px] `}>
+    <div style={{background: randomColor()}} className={` w-full h-[600px] overflow-auto p-8 rounded-[20px] `}>
         <div>
             <h1 style={{color: theme.primary}} className=' text-6xl max-md:text-3xl font-[900] '>{aboutMe.title}'</h1>
         </div>
