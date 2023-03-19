@@ -9,16 +9,6 @@ const initialState = {
 const appSlice = createSlice({
   name: "theme",
   initialState,
-  extraReducers: {
-    // [setTheme]: (state, action) => {
-    //   if (action.payload === "dark") {
-    //     state.theme = darkTheme;
-    //   } else {
-    //     state.theme = lightTheme;
-    //   }
-    // },
-    
-  },
   reducers: {
     setTheme: (state) => {
       if (state.theme.mode === darkTheme.mode) {
