@@ -7,29 +7,35 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        "blur-zoom-in-slow": "blur-zoom-in 0.6s ease-out",
-        "blur-zoom-in": "blur-zoom-in 0.4s ease-out",
-        "blur-slide-down": "blur-slide-down 1s ease-out",
+        "blur-in": "blur-in 0.3s ease-out",
+        "blur-in-0": "blur-in-0 0.5s ease-out",
+        "blur-slide-down": "blur-slide-down 0.3s ease-out",
+        "blur-slide-up": "blur-slide-up 0.3s ease-out",
+
       },
       keyframes: {
         
-        "blur-zoom-in": {
+        "blur-in-0": {
           "0%": {
             opacity: 0,
-            filter: "blur(6px)",
+            filter: "blur(7px)",
+            transform: "translateX(10%)",
+          },
+          "50%":{
+            filter: "blur(1px)",
           },
           "100%": {
             opacity: 1,
             transform: "scale(1)",
-            filter: "blur(0)",
+            filter: "blur(0px)",
             transform: "translateX(0)",
           },
         },
-        "blur-zoom-in-slow": {
+        "blur-in": {
           "0%": {
             opacity: 0,
-            // transform: "scale(0.9)",
-            filter: "blur(6px)",
+            transform: "scale(0.98)",
+            filter: "blur(16px)",
             // transform: "translateX(40%)",
           },
           
@@ -37,7 +43,7 @@ module.exports = {
             opacity: 1,
             transform: "scale(1)",
             filter: "blur(0)",
-            transform: "translateX(0)",
+            // transform: "translateX(0)",
           },
         },
         "blur-slide-down": {
@@ -52,6 +58,24 @@ module.exports = {
             transform: "translateY(-10%)",
           },
           "100%": {
+            opacity: 1,
+            transform: "scale(1)",
+            filter: "blur(0)",
+            transform: "translateY(0)",
+          },
+        },
+        "blur-slide-up": {
+          "100%": {
+            opacity: 0,
+            transform: "scale(0.5)",
+            filter: "blur(6px)",
+            transform: "translateY(-50%)",
+          },
+          '60%': {
+            // filter: "blur(5px)",
+            transform: "translateY(-10%)",
+          },
+          "0%": {
             opacity: 1,
             transform: "scale(1)",
             filter: "blur(0)",

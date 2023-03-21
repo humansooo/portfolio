@@ -20,8 +20,37 @@ function Navbar() {
     setIsActive(final);
   }, [window.location.href]);
 
+  // show navbar on scroll down
+  useEffect(() => {
+    const navbar = document.querySelector(".navBar");
+    // navbar.classList.add("animate-blur-slide-down");
+    const navbarHeight = navbar.offsetHeight;
+    let lastScrollTop = 0;
+    window.addEventListener("scroll", () => {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop && scrollTop > navbarHeight + 100 ) {
+        setTimeout(() => {
+        navbar.classList.add("-translate-y-full blur-[10px]");
+        navbar.classList.remove("translate-y-0");
+        }, 100);
+        
+      } else {
+        navbar.classList.remove("-translate-y-full");
+        setTimeout(() => {
+          navbar.classList.add("translate-y-0");
+        }, 100);
+      }
+      lastScrollTop = scrollTop;
+    });
+  }, [window.pageYOffset]);
+
+
+
   return (
-    <div className=" flex flex-row max-lg:flex-col justify-between gap-3 animate-blur-slide-down ">
+    <div style={{
+      background: theme.primary,
+      boxShadow: `0px 0px 10px 0px ${theme.primary}`,
+    }} className=" flex navBar flex-row max-lg:flex-col justify-between duration-200 animate-blur-slide-down gap-3 fixed z-[999] top-0 w-full px-6 py-4 left-0 ">
       <div className=" flex max-sm:hidden flex-row justify-end gap-3  ">
         {socials.map((link) => (
           <Socials key={link.id} data={link} />
