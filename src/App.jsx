@@ -18,7 +18,7 @@ function App() {
 
       {/* </head> */}
       <Navbar />
-      <div className=" w-full h-full mt-[5rem] max-lg:mt-[8rem] " >
+      <div className=" w-full h-full mt-[4rem] max-lg:mt-[8rem] " >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<ProjectPage />} />

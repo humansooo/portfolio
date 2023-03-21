@@ -29,13 +29,13 @@ function Navbar() {
     window.addEventListener("scroll", () => {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       if (scrollTop > lastScrollTop && scrollTop > navbarHeight + 100 ) {
-        navbar.classList.add("-translate-y-full");
+        navbar.classList.add("translate-y-[-120%]");
         navbar.classList.remove("translate-y-0");
         // navbar.classList.remove("animate-blur-slide-down");
         // navbar.classList.add("animate-blur-slide-up");
         
       } else {
-        navbar.classList.remove("-translate-y-full");
+        navbar.classList.remove("translate-y-[-120%]");
         navbar.classList.add("translate-y-0");
         // navbar.classList.add("animate-blur-slide-down");
         // navbar.classList.remove("animate-blur-slide-up");
@@ -48,9 +48,9 @@ function Navbar() {
 
   return (
     <div style={{
-      background: theme.primary,
-      boxShadow: `0px 0px 10px 0px ${theme.primary}`,
-    }} className=" flex navBar flex-row max-lg:flex-col justify-between duration-200 gap-3 fixed z-[999] top-0 w-full px-6 py-4 max-sm:py-2.5 left-0 ">
+      background: theme.mode === "light" ? "#eeeeee33" : "#151515cc",  
+      // boxShadow: `0px 0px 10px 0px ${theme.primary}`,
+    }} className=" flex navBar flex-row max-lg:flex-col justify-between backdrop-blur-[7px] duration-200 gap-3 md:bg-[#000000ad] z-[999] scale-100 lg:left-1/2 lg:w-[80%] w-[100%] fixed lg:mt-3 lg:translate-x-[-50%] px-6 lg:px-4 lg:py-2 py-4  left-0 top-0 max-sm:py-2.5 lg:rounded-[50px] ">
       <div className=" flex max-sm:hidden flex-row justify-end gap-3  ">
         {socials.map((link) => (
           <Socials key={link.id} data={link} />
