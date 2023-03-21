@@ -1,3 +1,5 @@
+const friday = '# **Files** \n StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**'
+
 export const projects = [
     {
         title: 'Friday Social',
@@ -21,7 +23,7 @@ export const projects = [
     },
     {
         title: 'Friday Social',
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.<div> hey</div>",
+        description: friday,
         image: '/images/1.png',
         tags: ['React', 'Node'],
         link: 'https://google.com',

@@ -3,7 +3,9 @@ import { randomColor } from "../utils";
 import { projects, socials } from "../data";
 import Socials from "../components/Socials";
 import { useSelector, useDispatch } from "react-redux";
-import reactMarkdown from "react-markdown";
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+
 
 function ProjectPage() {
   const dispatch = useDispatch();
@@ -53,12 +55,17 @@ function ProjectPage() {
               </h1>
 
               <div className=" mt-3 sm:mt-6  ">
-                <h1
+                <p
                   // style={{ color: theme.opText }}
-                  className=" text-base max-md:text-[14px] opacity-80 font-[400] "
+                  className=" text-base max-md:text-[14px] opacity-80  "
                 >
-                  {project.description}
-                </h1>
+                  {/* {project.description} */}
+                  <ReactMarkdown
+                    children={project.description}
+                    remarkPlugins={[remarkGfm]}
+                  />
+                    
+                </p>
               </div>
 
               <div className="mt-3 flex flex-row gap-2 items-center  sm:mt-6  ">
