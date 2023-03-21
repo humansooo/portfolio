@@ -13,14 +13,10 @@ function ProjectPage() {
       
       <div className="mt-3 sm:mt-6 flex flex-col justify-center items-start ">
       <style>
-        {`
-            .scroll {
-              // border: 2px solid ${theme.mode === "light" ? "#00000056" : "#"};
-              color: ${theme.lightText};
-            }
-            `}
       </style>
-      <div className=" lg:w-56 pl-2 scroll text-[24px] animate-blur-in-0 leading-snug  mb-3 py-2 font-[800] uppercase rounded-full ">
+      <div style={{
+        color: theme.lightText,
+      }} className=" lg:w-56 pl-2 scroll text-[24px] animate-blur-in-0 leading-snug  mb-3 py-2 font-[800] uppercase rounded-full ">
             projects
       </div>
         <title>Projects</title>

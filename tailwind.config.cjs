@@ -54,7 +54,7 @@ module.exports = {
             transform: "translateY(-50%)",
           },
           '60%': {
-            // filter: "blur(5px)",
+            filter: "blur(5px)",
             transform: "translateY(-10%)",
           },
           "100%": {

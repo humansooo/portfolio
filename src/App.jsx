@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import { Home, ProjectPage } from "./pages";
+import { AboutPage, ContactPage, Home, NotFound, ProjectPage } from "./pages";
 import { useDispatch, useSelector } from "react-redux";
 import { Navbar } from "./components";
 
@@ -11,19 +11,20 @@ function App() {
   return (
     <div
       style={{ background: theme.primary, color: theme.text }}
-      className="App duration-500 p-3 sm:p-6 
-       h-full overflow-x-hidden "
+      className="App duration-300 p-3 sm:p-6 outline overflow-x-hidden "
     >
       {/* <head> */}
 
       {/* </head> */}
       <Navbar />
-      <div className=" w-full h-full mt-[4rem] max-lg:mt-[8rem] " >
+      <div className=" mt-[4rem] max-lg:mt-[8rem] " >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<ProjectPage />} />
-          <Route path="/contact" element={<ProjectPage />} />
-          <Route path="/about" element={<ProjectPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          {/* error page */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </div>
