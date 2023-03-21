@@ -26,8 +26,8 @@ function ProjectPage() {
         <title>Projects</title>
         <div
           className={
-            ` lg:h-[75vh] h-[71vh] flex w-full flex-col border-[2px] animate-blur-in justify-start items-start gap-4 sm:gap-4 max-md:flex-col
-             overflow-auto p-4 sm:p-6 rounded-[20px] scrollbar-none ` +
+            ` lg:h-[75vh] h-[71vh] flex w-full flex-col border animate-blur-in justify-start items-start gap-4 sm:gap-4 max-md:flex-col
+             overflow-auto p-4 sm:p-6 rounded-[24px] scrollbar-none ` +
             `${
               theme.mode === "light"
                 ? "border-[#00000056]"
