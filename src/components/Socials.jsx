@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-function Socials({ data, link, invert }) {
+function Socials({ data, link, invert, borderOff}) {
   const theme = useSelector((state) => state.theme);
   return (
     <a
@@ -20,7 +20,8 @@ function Socials({ data, link, invert }) {
               ? "border-[#ffffff56] border-none p-0 "
               : "border-[#00000059] border-none p-0 "
             : ""
-        }`
+        }` +
+        ` ${borderOff && "border-none"}`
       }
     >
       <img

@@ -5,9 +5,11 @@
 @tailwind utilities;
 
 html,
+.App,
 body,
 #root{
   height: 100%;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
