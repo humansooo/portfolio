@@ -15,17 +15,18 @@ function ProjectPage() {
       <style>
         {`
             .scroll {
-              // border: 2px solid ${theme.lightText};
+              // border: 2px solid ${theme.mode === "light" ? "#00000056" : "#"};
+              color: ${theme.lightText};
             }
             `}
       </style>
-      <div className=" lg:w-56 pl-2 text-[24px] leading-snug  mb-3 py-2 opacity-40 font-[800] uppercase rounded-full ">
+      <div className=" lg:w-56 pl-2 scroll text-[24px] animate-blur-in-0 leading-snug  mb-3 py-2 font-[800] uppercase rounded-full ">
             projects
       </div>
         <title>Projects</title>
         <div
           className={
-            ` lg:h-[75vh] h-[71vh] flex w-full flex-col border-[2px] justify-start items-start gap-4 sm:gap-4 max-md:flex-col
+            ` lg:h-[75vh] h-[71vh] flex w-full flex-col border-[2px] animate-blur-in justify-start items-start gap-4 sm:gap-4 max-md:flex-col
              overflow-auto p-4 sm:p-6 rounded-[20px] scrollbar-none ` +
             `${
               theme.mode === "light"
@@ -39,7 +40,7 @@ function ProjectPage() {
             <div
               // style={{ backgroundColor: randomColor().color }}
               className={
-                "  sm:h-[400px] w-full sm:max-w-[1500px] animate-blur-zoom-in rounded-[20px]  p-4 border sm:py-6 " +
+                "  sm:h-[400px] w-full sm:max-w-[1500px] rounded-[20px]  p-4 border sm:py-6 " +
                 `${
                   theme.mode === "light"
                     ? "border-[#00000056]"
@@ -49,7 +50,7 @@ function ProjectPage() {
               key={project.id}
             >
               <h1
-                style={{ color: randomColor().color }}
+                style={{ color: theme.lightText }}
                 className=" text-6xl max-md:text-2xl font-[700] "
               >
                 {project.title}

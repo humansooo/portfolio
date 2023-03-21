@@ -11,19 +11,21 @@ function App() {
   return (
     <div
       style={{ background: theme.primary, color: theme.text }}
-      className="App duration-500 p-3 sm:p-6 w-full h-screen overflow-auto "
+      className="App duration-500 p-3 sm:p-6 
+       h-full overflow-x-hidden "
     >
       {/* <head> */}
 
       {/* </head> */}
-        <Navbar />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<ProjectPage />} />
-        <Route path="/contact" element={<ProjectPage />} />
-        <Route path="/about" element={<ProjectPage />} />
-      </Routes>
+      <Navbar />
+      <div className=" w-full h-full mt-[5rem] max-lg:mt-[8rem] " >
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<ProjectPage />} />
+          <Route path="/contact" element={<ProjectPage />} />
+          <Route path="/about" element={<ProjectPage />} />
+        </Routes>
+      </div>
     </div>
   );
 }

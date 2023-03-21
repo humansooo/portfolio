@@ -24,17 +24,23 @@ function Home() {
     <>
       <title>Himanshu Suthar</title>
 
-      {/* <div className=" flex sm:flex-col-reverse flex-col "> */}
-      <div className=" mt-3 sm:mt-6 animate-blur-zoom-in-slow ">
+      <div className=" mt-3 sm:mt-6 animate-blur-in ">
         <AboutBanner />
       </div>
+
+      <div className=" mt-3 sm:mt-6 p-6 max-sm:p-3 h-[57vh] bg-[#e18b55] rounded-[20px] animate-blur-in ">
+      <div className={` h-full w-full border rounded-[14px] animate-blur-in ` +
+      `${theme.mode === "light" ? "border-[#00000049]" : "border-[#00000049]"}`}>
+
+      </div>
+      </div>
       
+      {/* bottom social links */}
       <div className="  flex-row hidden mt-6 max-sm:flex justify-end gap-3  ">
         {socials.map((link) => (
           <Socials key={link.id} data={link} />
         ))}
       </div>
-      {/* </div> */}
     </>
   );
 }
