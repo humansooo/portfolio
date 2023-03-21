@@ -46,7 +46,7 @@ function Navbar() {
         ))}
         <NavButton
           theme={theme}
-          to={""}
+          // to={""}
           text={
             theme.mode !== "dark" ? (
               <img
