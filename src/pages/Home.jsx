@@ -6,7 +6,6 @@ import AboutBanner from "../components/AboutBanner";
 import { projects, socials } from "../data";
 import Socials from "../components/Socials";
 import { randomColor } from "../utils";
-import Slider from "react-slick";
 
 function Home() {
   const dispatch = useDispatch();
