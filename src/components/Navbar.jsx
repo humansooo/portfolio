@@ -21,7 +21,7 @@ function Navbar() {
   }, [window.location.href]);
 
   return (
-    <div className=" flex flex-row max-lg:flex-col justify-between gap-3 animate-blur-zoom-in ">
+    <div className=" flex flex-row max-lg:flex-col justify-between gap-3 animate-blur-slide-down ">
       <div className=" flex max-sm:hidden flex-row justify-end gap-3  ">
         {socials.map((link) => (
           <Socials key={link.id} data={link} />
