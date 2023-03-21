@@ -10,7 +10,7 @@ function AboutBanner() {
   return (
     <div
       style={{ background: randomColor().color, color: randomColor().text }}
-      className={` w-full min-h-[300px] flex flex-row max-md:flex-col-reverse justify-between p-3 rounded-[23px] ` +
+      className={` w-full min-h-[300px] p-3 rounded-[23px] ` +
       `${
         theme.mode === "light"
           ? "border-[#00000078]"

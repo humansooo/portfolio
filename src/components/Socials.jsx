@@ -7,12 +7,12 @@ function Socials({ data, link, invert, borderOff}) {
   return (
     <a
       style={{ color: theme.lightText }}
-      href={link ? link : data.link}
+      href={link ? link : data.path}
       target="_blank"
       className={
-        ` max-sm:text-sm max-sm:p-2 duration-500 h-full p-3 flex justify-between items-center border-[2px] rounded-full ` +
+        ` max-sm:text-sm max-sm:p-2 duration-500 h-full p-3 flex justify-between cursor-pointer items-center border-[1px] rounded-full ` +
         `${
-          theme.mode === "light" ? "border-[#00000056]" : "border-[#ffffff24]"
+          theme.mode === "light" ? "border-[#00000056]" : "border-[#ffffff44]"
         } ` +
         ` ${
           invert
