@@ -61,7 +61,7 @@ export const navlinks = [
 
 export const aboutMe = {
     title: 'Himanshu Suthar',
-    description: " lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ex voluptatum, quibusdam, quod, voluptas quidem voluptatibus quos voluptatem quia quae quas.",
+    description: " Web3, React, Flutter, NodeJs - developer.  lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ex voluptatum, quibusdam, quod, voluptas quidem voluptatibus quos voluptatem quia quae quas.",
     image: 'https://pbs.twimg.com/profile_images/1611310553603137537/4Mxh61P9_400x400.jpg',
     skills: ['React', 'Node', 'Solidity'],
     contact: {},
