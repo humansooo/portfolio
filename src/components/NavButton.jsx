@@ -9,9 +9,9 @@ function NavButton({ theme, to, text, icon, onClick, length, isActive, invert, t
       style={{ color: textColor ? textColor : theme.lightText }}
       onClick={onClick}
       className={
-        ` gap-2 sm:hover:gap-6 max-sm:text-sm max-sm:gap-1 cursor-pointer text-[16px] max-sm:p-1.5 max-sm:pl-3 duration-500 h-full flex justify-between items-center p-2 pl-4 border-[2px] rounded-full ` +
+        ` gap-2 sm:hover:gap-6 max-sm:text-sm max-sm:gap-1 cursor-pointer text-[16px] max-sm:p-1.5 max-sm:pl-3 duration-500 h-full flex justify-between items-center p-2 pl-4 border-[1px] rounded-full ` +
         `${
-          theme.mode === "light" ? "border-[#00000056]" : "border-[#ffffff24]"
+          theme.mode === "light" ? "border-[#00000056]" : "border-[#cccccc66]"
         } ` +
         `${
           !icon ? " sm:hover:gap-0 pl-[8px] max-sm:pl-[6px] " : "sm:hover:pl-5"
@@ -19,11 +19,11 @@ function NavButton({ theme, to, text, icon, onClick, length, isActive, invert, t
          + ` ${invert && "border-[#ffffff3f]"}`
       }
     >
-      <h1>{text}</h1>
+      <h1 className=" font-[300] ">{text}</h1>
       {icon && (
         <div
           className={
-            "flex justify-center items-center h-[28px] w-[28px] font-[700] rounded-full border-[2px]   " +
+            "flex justify-center items-center h-[28px] w-[28px] font-[700] rounded-full border-[1px]   " +
             ` duration-500 ${
               theme.mode === "light"
                 ? "border-[#9b9b9b] sm:hover:border-[#5f5e5e]"
