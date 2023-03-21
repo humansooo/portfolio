@@ -27,7 +27,7 @@ function Navbar() {
           <Socials key={link.id} data={link} />
         ))}
       </div>
-      <div className=" flex flex-wrap justify-end gap-3 ">
+      <div className=" flex flex-wrap justify-end gap-1.5 sm:gap-3 ">
         {navlinks.map((link) => (
           <div
             key={link.id}

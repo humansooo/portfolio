@@ -22,14 +22,14 @@ function ProjectPage() {
             >
               <h1
               // style={{ color: theme.opText }}
-              className=" text-6xl max-md:text-2xl font-[900] ">
+              className=" text-6xl max-md:text-2xl font-[700] ">
                 {project.title}
               </h1>
 
               <div className=" mt-3 sm:mt-6  ">
                 <h1
                   // style={{ color: theme.opText }}
-                  className=" text-base max-md:text-[14px] opacity-60 font-[500] "
+                  className=" text-base max-md:text-[14px] opacity-60 font-[400] "
                 >
                   {project.description}
                 </h1>

@@ -21,7 +21,7 @@ export const projects = [
     },
     {
         title: 'Friday Social',
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.<div> hey</div>",
         image: '/images/1.png',
         tags: ['React', 'Node'],
         link: 'https://google.com',
