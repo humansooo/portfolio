@@ -17,11 +17,11 @@ function App() {
 
       {/* </head> */}
       <Navbar />
-      <div className=" mt-[4rem] max-lg:mt-[8rem] " >
+      <div className=" sm:mt-[4rem] mt-[6rem] " >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<ProjectPage />} />
-          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/Contact" element={<ContactPage />} />
           <Route path="/about" element={<AboutPage />} />
           {/* error page */}
           <Route path="*" element={<NotFound />} />
