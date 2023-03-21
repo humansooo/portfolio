@@ -29,16 +29,16 @@ function Navbar() {
     window.addEventListener("scroll", () => {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       if (scrollTop > lastScrollTop && scrollTop > navbarHeight + 100 ) {
-        setTimeout(() => {
-        navbar.classList.add("-translate-y-full blur-[10px]");
+        navbar.classList.add("-translate-y-full");
         navbar.classList.remove("translate-y-0");
-        }, 100);
+        // navbar.classList.remove("animate-blur-slide-down");
+        // navbar.classList.add("animate-blur-slide-up");
         
       } else {
         navbar.classList.remove("-translate-y-full");
-        setTimeout(() => {
-          navbar.classList.add("translate-y-0");
-        }, 100);
+        navbar.classList.add("translate-y-0");
+        // navbar.classList.add("animate-blur-slide-down");
+        // navbar.classList.remove("animate-blur-slide-up");
       }
       lastScrollTop = scrollTop;
     });
@@ -50,7 +50,7 @@ function Navbar() {
     <div style={{
       background: theme.primary,
       boxShadow: `0px 0px 10px 0px ${theme.primary}`,
-    }} className=" flex navBar flex-row max-lg:flex-col justify-between duration-200 animate-blur-slide-down gap-3 fixed z-[999] top-0 w-full px-6 py-4 left-0 ">
+    }} className=" flex navBar flex-row max-lg:flex-col justify-between duration-200 gap-3 fixed z-[999] top-0 w-full px-6 py-4 max-sm:py-2.5 left-0 ">
       <div className=" flex max-sm:hidden flex-row justify-end gap-3  ">
         {socials.map((link) => (
           <Socials key={link.id} data={link} />
