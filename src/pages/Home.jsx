@@ -25,7 +25,7 @@ function Home() {
       <title>Himanshu Suthar</title>
 
       {/* <div className=" flex sm:flex-col-reverse flex-col "> */}
-      <div className=" mt-3 sm:mt-6 ">
+      <div className=" mt-3 sm:mt-6 animate-blur-zoom-in ">
         <AboutBanner />
       </div>
       

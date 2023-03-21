@@ -10,7 +10,7 @@ function ProjectPage() {
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.theme);
   return (
-    <div className=" h-[calc(100vh-96px)] ">
+    <div className=" h-[calc(100vh-96px)] animate-blur-zoom-in ">
       <div className="mt-3 sm:mt-6 flex ">
         <title>Projects</title>
         <div
@@ -28,7 +28,7 @@ function ProjectPage() {
           {projects.map((project) => (
             <div
               // style={{ backgroundColor: randomColor().color }}
-              className={"  sm:h-[400px] w-full sm:max-w-[1500px] rounded-[20px]  p-4 border sm:py-6 " + `${
+              className={"  sm:h-[400px] w-full sm:max-w-[1500px] animate-blur-zoom-in rounded-[20px]  p-4 border sm:py-6 " + `${
                 theme.mode === "light" ? "border-[#00000056]" : "border-[#ffffff24]"
               } `}
               key={project.id}

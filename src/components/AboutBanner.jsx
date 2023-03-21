@@ -48,7 +48,7 @@ function AboutBanner() {
             theme={theme}
             // invert={theme.mode === "light" ? false : true}
             invert={true}
-            textColor={theme.text}
+            textColor={'#eee'}
             to="/About"
             text="Read More"
             icon=">"
