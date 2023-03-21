@@ -51,7 +51,7 @@ module.exports = {
             opacity: 0,
             transform: "scale(0.5)",
             filter: "blur(6px)",
-            transform: "translateY(-50%)",
+            transform: "translateY(-50%), translateX(0)",
           },
           '60%': {
             filter: "blur(5px)",

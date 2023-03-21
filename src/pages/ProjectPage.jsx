@@ -11,9 +11,9 @@ function ProjectPage() {
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.theme);
   return (
-    <div className=" animate-blur-zoom-in ">
+    <div className=" animate-blur-zoom-in pt-[7rem] sm:pt-[4rem] h-screen  p-3 sm:p-6  ">
       
-      <div className="mt-3 sm:mt-6 flex flex-col justify-center items-start ">
+      <div className=" flex flex-col justify-center items-start ">
       <style>
       </style>
       <div style={{

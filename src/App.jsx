@@ -11,13 +11,13 @@ function App() {
   return (
     <div
       style={{ background: theme.primary, color: theme.text }}
-      className="App duration-300 p-3 sm:p-6 outline overflow-x-hidden "
+      className="App duration-300  overflow-x-hidden "
     >
       {/* <head> */}
 
       {/* </head> */}
       <Navbar />
-      <div className=" sm:mt-[4rem] mt-[6rem] " >
+      {/* <div className=" sm:mt-[4rem] mt-[6rem] h-[calc(100vh-6rem)] sm:h-[calc(100vh-4rem)] " > */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<ProjectPage />} />
@@ -26,7 +26,7 @@ function App() {
           {/* error page */}
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </div>
+      {/* </div> */}
     </div>
   );
 }

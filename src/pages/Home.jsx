@@ -24,7 +24,7 @@ function Home() {
     <>
       <title>Himanshu Suthar</title>
 
-      <div className=" mt-3 sm:mt-6 animate-blur-in ">
+      <div className=" mt-[7rem] sm:mt-[4rem] p-3 sm:p-6 animate-blur-in ">
         <AboutBanner />
       </div>
 

@@ -28,17 +28,13 @@ function Navbar() {
     let lastScrollTop = 0;
     window.addEventListener("scroll", () => {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if(window.innerWidth > 768) return;
-      if (scrollTop > lastScrollTop  && scrollTop > navbarHeight + 100) {
+      if (window.innerWidth > 768) return;
+      if (scrollTop > lastScrollTop && scrollTop > navbarHeight + 100) {
         navbar.classList.add("translate-y-[-120%]");
         navbar.classList.remove("translate-y-0");
-        // navbar.classList.remove("animate-blur-slide-down");
-        // navbar.classList.add("animate-blur-slide-up");
       } else {
         navbar.classList.remove("translate-y-[-120%]");
         navbar.classList.add("translate-y-0");
-        // navbar.classList.add("animate-blur-slide-down");
-        // navbar.classList.remove("animate-blur-slide-up");
       }
       lastScrollTop = scrollTop;
     });
@@ -46,19 +42,20 @@ function Navbar() {
 
   return (
     <div
+      id="navbar"
       style={{
         background: theme.mode === "light" ? "#eeeeee77" : "#22222299",
         // boxShadow: `0px 0px 10px 0px ${theme.primary}`,
       }}
-      className=" flex navBar flex-row max-lg:flex-col justify-between backdrop-blur-[5px] animate-blur-slide-down duration-300 gap-3 z-[999] scale-100 lg:left-1/2 lg:w-[80%]
-       w-[100%] fixed lg:mt-3 lg:translate-x-[-50%] px-6 lg:px-2.5 lg:py-2 py-4  left-0 top-0 max-sm:py-2.5 lg:rounded-[50px] "
+      className=" flex navBar flex-row max-lg:flex-col justify-between backdrop-blur-[5px]  duration-300 gap-3 z-[999] scale-100 lg:left-1/2 lg:w-[80%]
+       w-[100%] fixed lg:mt-3  px-6 lg:px-2.5 lg:py-2 py-4  left-0 top-0 max-sm:py-2.5 lg:rounded-[50px] animate-blur-in-0z  "
     >
       <div className=" flex max-sm:hidden flex-row justify-end gap-3  ">
         {socials.map((link) => (
           <Socials key={link.id} data={link} />
         ))}
       </div>
-      <div className=" flex flex-wrap justify-end gap-1.5 sm:gap-3 ">
+      <div className=" flex flex-wrap justify-end gap-2 sm:gap-3 ">
         {navlinks.map((link) => (
           <div
             key={link.id}
