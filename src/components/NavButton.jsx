@@ -29,7 +29,7 @@ function NavButton({ theme, to, text, icon, onClick, length, isActive, invert, t
                 ? "border-[#9b9b9b] sm:hover:border-[#5f5e5e]"
                 : "border-[#5b5b5b] sm:hover:border-[#c3c3c3]"
             }` +
-            ` ${length && "px-8 ml-4 border-none bg-[#ff6f00]"}` +
+            ` ${length && "px-6 border-none bg-[#ff6f00]"}` +
             ` ${isActive && isActive === text && "border-[#ff6f00]"}` +  ` ${invert && "border-[#ffffff3f] sm:hover:border-[#ffffffa9]"}`
 
           }
