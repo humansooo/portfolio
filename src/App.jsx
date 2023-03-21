@@ -11,7 +11,7 @@ function App() {
   return (
     <div
       style={{ background: theme.primary, color: theme.text }}
-      className=" duration-500 p-6 min-h-screen "
+      className=" duration-500 p-3 sm:p-6 min-h-full w-full overflow-x-hidden "
     >
       {/* <head> */}
 
