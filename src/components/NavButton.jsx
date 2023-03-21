@@ -25,8 +25,8 @@ function NavButton({ theme, to, text, icon, onClick, length, isActive }) {
             "flex justify-center items-center h-[28px] w-[28px] font-[700] rounded-full border-[2px]   " +
             ` duration-500 ${
               theme.mode === "light"
-                ? "border-[#9b9b9b] hover:border-[#5f5e5e]"
-                : "border-[#5b5b5b] hover:border-[#c3c3c3]"
+                ? "border-[#9b9b9b] sm:hover:border-[#5f5e5e]"
+                : "border-[#5b5b5b] sm:hover:border-[#c3c3c3]"
             }` + ` ${length && "px-8 ml-4 border-none bg-[#ff6f00]"}` + ` ${isActive && isActive === text && "border-[#ff6f00]"}`
           }
         >
