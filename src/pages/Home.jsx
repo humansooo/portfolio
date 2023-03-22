@@ -28,14 +28,26 @@ function Home() {
         <AboutBanner />
       </div>
 
-      <div className={" mt-3 sm:mt-6 p-3 h-[97vh] border rounded-[24px] animate-blur-in " +
-      `${theme.mode === "light" ? "border-[#00000049]" : "border-[#ffffff49]"}`}>
-      <div className={` h-full w-full border rounded-[14px] animate-blur-in ` +
-      `${theme.mode === "light" ? "border-[#00000049]" : "border-[#ffffff49]"}`}>
+      <div
+        className={
+          " mt-3 sm:mt-6 sm:m-6 m-3 p-3 h-[97vh] border rounded-[24px] animate-blur-in " +
+          `${
+            theme.mode === "light" ? "border-[#00000049]" : "border-[#ffffff49]"
+          }`
+        }
+      >
+        <div
+          className={
+            ` h-full w-full border rounded-[14px] animate-blur-in ` +
+            `${
+              theme.mode === "light"
+                ? "border-[#00000049]"
+                : "border-[#ffffff49]"
+            }`
+          }
+        ></div>
+      </div>
 
-      </div>
-      </div>
-      
       {/* bottom social links */}
       <div className="  flex-row hidden mt-6 max-sm:flex justify-end gap-3  ">
         {socials.map((link) => (
