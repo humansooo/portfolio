@@ -51,7 +51,7 @@ function Navbar() {
         // backdropFilter: "blur(6px)",
         // boxShadow: `0px 0px 10px 0px ${theme.primary}`,
       }}
-      className=" flex navBar flex-row max-lg:flex-col justify-between backdrop-blur-[5px] md:shadow-xl md:shadow-[#2626260d] duration-300 gap-3 z-[999] scale-100 lg:left-[calc(10%)]
+      className=" flex navBar flex-row max-lg:flex-col justify-between backdrop-blur-[5px] lg:shadow-xl lg:shadow-[#26262610] duration-300 gap-3 z-[999] scale-100 lg:left-[calc(10%)]
        lg:w-[80%]
        w-[100%] fixed lg:mt-3  px-6 lg:px-2.5 lg:py-2 py-4  left-0 top-0 max-sm:py-2.5 lg:rounded-[50px] animate-blur-slide-down  "
     >

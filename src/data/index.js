@@ -41,6 +41,16 @@ export const projects = [
         visit: 'https://google.com',
         id: 3,
     },
+    {
+        title: '#Portfolio',
+        description: "# **Desc** \n  UI/UX portfolio website using React and Redux.",
+        image: '/images/1.png',
+        tags: ['Node', 'React', 'Redux'], 
+        link: 'https://github.com/verareyou/MGMT-PROJECT',
+        source: 'https://google.com',
+        visit: 'https://google.com',
+        id: 4,
+    },
 ];
 export const navlinks = [
     {

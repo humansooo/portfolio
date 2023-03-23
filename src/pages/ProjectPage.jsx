@@ -10,7 +10,7 @@ function ProjectPage() {
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.theme);
   return (
-    <div className=" animate-blur-slide-down-10 pt-[7rem] sm:pt-[8rem] lg:pt-[5rem]  p-3 sm:p-6  ">
+    <div className=" animate-blur-slide-down-10 pt-[7rem] sm:pt-[8rem] lg:pt-[8rem] p-3 sm:p-6  ">
       <div className=" flex flex-col justify-center items-start ">
         <style></style>
         <div
@@ -27,7 +27,7 @@ function ProjectPage() {
             // ` 
             // lg:h-[78vh] sm:h-[73vh]
             `
-             flex w-full flex-col border animate-blur-in justify-start items-start gap-4 sm:gap-4 max-md:flex-col
+             flex w-full md:flex-col border animate-blur-in justify-start items-start gap-4 sm:gap-4 max-md:flex-col
              overflow-auto p-3 sm:p-4 rounded-[24px] scrollbar-none ` +
             `${
               theme.mode === "light"
@@ -40,7 +40,7 @@ function ProjectPage() {
             <div
               // style={{ backgroundColor: randomColor().color }}
               className={
-                "  sm:h-[400px] w-full sm:max-w-[1500px] rounded-[20px]  p-4 border sm:py-6 " +
+                "  sm:h-fit w-full rounded-[20px]  p-4 border sm:py-6 " +
                 `${
                   theme.mode === "light"
                     ? "border-[#00000056]"
