@@ -21,7 +21,7 @@ function Socials({ data, link, invert, borderOff}) {
               : "border-[#00000059] border-none p-0 "
             : ""
         }` +
-        ` ${borderOff && "border-none"}`
+        ` ${borderOff && " -ml-3 border-none"}`
       }
     >
       <img

@@ -35,10 +35,19 @@ function Home() {
           +`${theme.mode === "light" ? "border-[#00000049]" : "border-[#ffffff49]"}`
         }
         >
-        <Link to={'/Projects'} className={" text-xl duration-500 text-center after:container border p-2 px-3 hover:px-6 rounded-full  hover:blur-[1px] font-semibold " + `${theme.mode === "light" ? "border-[#00000049]" : "border-[#ffffff49]"}`
+        <div className={" text-xl duration-500 flex flex-row justify-between items-center w-full border p-2 px-3 pl-4 rounded-full font-semibold " + `${theme.mode === "light" ? "border-[#00000049]" : "border-[#ffffff49]"}`
         }
-        >Projects</Link>
-        <div className="flex flex-wrap max-md:flex-wrap gap-3">
+        >
+        <h1>Projects</h1>
+        <Link to={'/Projects'}
+        style={{
+          backgroundColor: theme.primary,
+        }}
+        className={" md:text-xl duration-500 after:container md:border p-1 px-5 md:hover:px-6 rounded-full hover:invert hover:blur-[1px] font-light text-sm md:font-semibold " + `${theme.mode === "light" ? "border-[#00000049]" : "border-[#ffffff49]"}`
+        }
+        >View all</Link>
+        </div>
+        <div className="flex flex-wrap max-md:flex-col gap-3">
         {/* projects */}
           {/* <ProjectCard data={projects[0]} /> */}
           <ProjectCard data={projects[1]} />
