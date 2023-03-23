@@ -41,7 +41,8 @@ function Home() {
         <h1>Projects</h1>
         <Link to={'/Projects'}
         style={{
-          backgroundColor: theme.primary,
+          backgroundColor: theme.text,
+          color: theme.background,
         }}
         className={" md:text-lg duration-500 after:container md:border p-1 px-5 md:hover:px-6 rounded-full hover:invert hover:blur-[1px] font-light text-sm md:font-semibold " + `${theme.mode === "light" ? "border-[#00000049]" : "border-[#ffffff49]"}`
         }
