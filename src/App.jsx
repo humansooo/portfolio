@@ -7,7 +7,7 @@ import { Navbar, AlertBanner } from "./components";
 function App() {
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.theme);
-  const Dev = true;
+  const Dev = false;
 
   return (
     <div
