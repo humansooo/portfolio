@@ -11,14 +11,14 @@ function ProjectPage() {
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.theme);
   return (
-    <div className=" animate-blur-zoom-in pt-[7rem] sm:pt-[4rem] h-screen  p-3 sm:p-6  ">
+    <div className=" animate-blur-slide-down-10 pt-[7rem] md:pt-[5rem] h-screen p-3 sm:p-6  ">
       
       <div className=" flex flex-col justify-center items-start ">
       <style>
       </style>
       <div style={{
         color: theme.lightText,
-      }} className=" lg:w-56 pl-2 scroll text-[24px] animate-blur-in-0 leading-snug  mb-3 py-2 font-[800] uppercase rounded-full ">
+      }} className=" lg:w-56 pl-2 scroll text-[24px] leading-snug  mb-3 py-2 font-[800] uppercase rounded-full ">
             projects
       </div>
         <title>Projects</title>

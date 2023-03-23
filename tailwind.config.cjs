@@ -10,6 +10,7 @@ module.exports = {
         "blur-in": "blur-in 0.3s ease-out",
         "blur-in-0": "blur-in-0 0.5s ease-out",
         "blur-slide-down": "blur-slide-down 0.3s ease-out",
+        "blur-slide-down-10": "blur-slide-down-10 0.3s ease-out",
         "blur-slide-up": "blur-slide-up 0.3s ease-out",
 
       },
@@ -49,14 +50,26 @@ module.exports = {
         "blur-slide-down": {
           "0%": {
             opacity: 0,
-            transform: "scale(0.5)",
-            filter: "blur(6px)",
-            transform: "translateY(-50%), translateX(0)",
+            transform: "scale(0.2)",
+            filter: "blur(10px)",
+            transform: "translateY(-100%)",
           },
-          '60%': {
-            filter: "blur(5px)",
+          
+          "100%": {
+            opacity: 1,
+            transform: "scale(1)",
+            filter: "blur(0)",
+            transform: "translateY(0)",
+          },
+        },
+        "blur-slide-down-10": {
+          "0%": {
+            opacity: 0,
+            transform: "scale(0.5)",
+            filter: "blur(10px)",
             transform: "translateY(-10%)",
           },
+          
           "100%": {
             opacity: 1,
             transform: "scale(1)",
@@ -65,21 +78,17 @@ module.exports = {
           },
         },
         "blur-slide-up": {
-          "100%": {
-            opacity: 0,
-            transform: "scale(0.5)",
-            filter: "blur(6px)",
-            transform: "translateY(-50%)",
-          },
-          '60%': {
-            // filter: "blur(5px)",
-            transform: "translateY(-10%)",
-          },
           "0%": {
             opacity: 1,
             transform: "scale(1)",
             filter: "blur(0)",
-            transform: "translateY(0)",
+            transform: "translateY(10%)",
+          },
+          "100%": {
+            opacity: 0,
+            transform: "scale(0.5)",
+            filter: "blur(6px)",
+            transform: "translateY(0%)",
           },
         }
       }
