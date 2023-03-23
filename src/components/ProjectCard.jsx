@@ -19,13 +19,13 @@ function ProjectCard({ data }) {
     >
       {/* <div></div> */}
       <h1 className=" text-xl font-bold ">{data.title}</h1>
-      <p style={{ color: theme.lightText }} className=" mt-3 text-sm font-[300] ">
+      <div style={{ color: theme.lightText }} className=" mt-3 text-sm font-[300] ">
         <ReactMarkdown
           children={data.description.slice(0, 110) + "..."}
           remarkPlugins={[remarkGfm]}
         />
         {/* {data.description.slice(0, 100)} */}
-      </p>
+      </div>
       <div className="mt-2 flex flex-row gap-1 items-center  sm:mt-3  ">
         <Socials
           key={socials[0].id}
