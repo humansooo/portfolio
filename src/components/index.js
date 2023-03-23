@@ -4,3 +4,4 @@ export { default as NavButton } from './NavButton';
 export { default as Socials } from './Socials';
 export { default as AboutBanner } from './AboutBanner';
 export { default as ProjectCard } from './ProjectCard';
+export { default as AlertBanner } from './AlertBanner';

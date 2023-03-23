@@ -15,6 +15,21 @@ module.exports = {
 
       },
       keyframes: {
+        alert: {
+          "0%, 100%": {
+            transform: "scale(0,2)",
+            opacity: 0,
+            top: "-10%",
+            filter: "blur(10px)",
+        },
+          "50%": {
+            transform: "scale(1)",
+            opacity: 1,
+            top: "80px",
+            filter: "blur(0)",
+          },
+
+      },
         
         "blur-in-0": {
           "0%": {
