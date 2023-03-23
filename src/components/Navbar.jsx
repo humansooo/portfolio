@@ -62,6 +62,7 @@ function Navbar() {
       </div>
       <div className=" flex flex-wrap justify-end gap-2 sm:gap-3 ">
         {navlinks.map((link) => (
+          link.enable && (
           <div
             key={link.id}
             onClick={() =>
@@ -76,7 +77,7 @@ function Navbar() {
               length={link.data.length}
             />
           </div>
-        ))}
+        )))}
         <NavButton
           theme={theme}
           // to={""}
