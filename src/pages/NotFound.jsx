@@ -5,10 +5,10 @@ function NotFound() {
     const theme = useSelector((state) => state.theme)
     
   return (
-    <div>
+    <div className=' flex justify-center items-center min-h-screen '>
         <div style={{
         color: theme.lightText,
-      }} className=" lg:w-56 pl-2 scroll text-[24px] animate-blur-in-0 leading-snug  mb-3 py-2 font-[800] uppercase rounded-full ">
+      }} className=" text-5xl font-black ">
             ERROR
       </div>
     </div>
