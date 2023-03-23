@@ -57,7 +57,7 @@ function Home() {
           </div>
 
       {/* bottom social links */}
-      <div className="  flex-row hidden mt-6 max-sm:flex justify-end gap-3  ">
+      <div className="  flex-row hidden p-3 md:p-6 mt-6 max-sm:flex justify-end gap-3  ">
         {socials.map((link) => (
           <Socials key={link.id} data={link} />
         ))}

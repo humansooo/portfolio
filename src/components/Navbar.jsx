@@ -44,7 +44,7 @@ function Navbar() {
     <div
       id="navbar"
       style={{
-        background: theme.mode === "light" ? window.innerWidth > 800 ?  "#cccccc77" : "#eaeaea77" : window.innerWidth > 800 ?  "#28282888" : "#18181888",
+        background: theme.mode === "light" ? window.innerWidth > 800 ?  "#ffffff77" : "#efefef77" : window.innerWidth > 800 ?  "#30303088" : "#21212188",
         // boxShadow: `0px 0px 10px 0px ${theme.primary}`,
       }}
       className=" flex navBar flex-row max-lg:flex-col justify-between backdrop-blur-[5px] md:shadow-xl md:shadow-[#26262622] duration-300 gap-3 z-[999] scale-100 lg:left-[calc(10%)]
