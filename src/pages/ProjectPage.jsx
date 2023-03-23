@@ -15,7 +15,7 @@ function ProjectPage() {
         <style></style>
         <div
           style={{
-            color: theme.lightText,
+            color: theme.text,
           }}
           className=" lg:w-56 pl-2 scroll text-[24px] leading-snug  mb-3 py-2 font-[800] uppercase rounded-full "
         >
@@ -24,7 +24,10 @@ function ProjectPage() {
         <title>Projects</title>
         <div
           className={
-            ` lg:h-[78vh] sm:h-[73vh] flex w-full flex-col border animate-blur-in justify-start items-start gap-4 sm:gap-4 max-md:flex-col
+            // ` 
+            // lg:h-[78vh] sm:h-[73vh]
+            `
+             flex w-full flex-col border animate-blur-in justify-start items-start gap-4 sm:gap-4 max-md:flex-col
              overflow-auto p-3 sm:p-4 rounded-[24px] scrollbar-none ` +
             `${
               theme.mode === "light"
@@ -47,7 +50,7 @@ function ProjectPage() {
               key={project.id}
             >
               <h1
-                style={{ color: theme.lightText }}
+                style={{ color: theme.text }}
                 className=" text-5xl max-md:text-2xl font-[700] "
               >
                 {project.title}
@@ -61,7 +64,7 @@ function ProjectPage() {
 
               <div className=" mt-3 sm:mt-6  ">
                 <div
-                  // style={{ color: theme.opText }}
+                  style={{ color: theme.lightText }}
                   className=" text-base max-md:text-[14px] opacity-80  "
                 >
                   {/* {project.description} */}

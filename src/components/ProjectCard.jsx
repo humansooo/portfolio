@@ -18,7 +18,7 @@ function ProjectCard({ data }) {
       }
     >
       {/* <div></div> */}
-      <h1 className=" text-xl font-bold ">{data.title}</h1>
+      <h1 style={{color: theme.text}} className=" text-xl font-bold ">{data.title}</h1>
       <div
         style={{ color: theme.lightText }}
         className=" mt-3 text-sm font-[400] "

@@ -6,7 +6,7 @@ function NavButton({ theme, to, text, icon, onClick, length, isActive, invert, t
   return (
     <Link
       to={to}
-      style={{ color: textColor ? textColor : theme.lightText }}
+      style={{ color: textColor ? textColor : theme.text }}
       onClick={onClick}
       className={
         ` gap-2 sm:hover:gap-6 max-sm:text-sm max-sm:gap-1 cursor-pointer text-[16px] max-sm:p-1.5 max-sm:pl-3 duration-500 h-full flex justify-between items-center p-2 pl-4 border-[1px] rounded-full ` +

@@ -8,6 +8,7 @@ function AboutPage() {
 
   return (
     <div className="  p-3 sm:p-6 pt-[7rem] sm:pt-[8rem] lg:pt-[5rem] h-screen animate-blur-slide-down-10 ">
+      <title>About</title>
       <div
         style={{
           color: theme.lightText,
@@ -17,10 +18,10 @@ function AboutPage() {
         about me
       </div>
 
-      <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center">
-        <div>
+      <div className="flex flex-col ">
+        <div className=" w-[40vw] ">
           <h1 className=" text-3xl font-black  ">
-            {aboutMe.title}
+            {aboutMe.description}
           </h1>
         </div>
         <div>

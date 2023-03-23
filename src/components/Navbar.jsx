@@ -46,7 +46,7 @@ function Navbar() {
     <div
       id="navbar"
       style={{
-        background: theme.mode === "light" ? isWeb ?  "#ffffff77" : theme.lowPrimary : isWeb ? "#30303088" : theme.lowPrimary,
+        background: theme.mode === "light" ? isWeb ?  "#ffffff44" : theme.lowPrimary : isWeb ? "#30303088" : theme.lowPrimary,
         // opacity: window.innerWidth > 800 ? 1 : 0.7,
         // backdropFilter: "blur(6px)",
         // boxShadow: `0px 0px 10px 0px ${theme.primary}`,
