@@ -35,6 +35,7 @@ function ProjectCard({ data }) {
       >
         {data.tags.map((tag) => (
           <span
+            key={tag}
             className="mr-2 px-2 py-1 rounded-full my-1 text-[10px] font-[300] "
             style={{
               backgroundColor:

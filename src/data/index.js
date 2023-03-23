@@ -2,7 +2,7 @@ const friday = '# **Files** \n StackEdit stores your files in your browser, whic
 
 export const projects = [
     {
-        title: 'CrowdFunding',
+        title: '#CrowdFunding',
         description: "# **Brief** \n The perfect decentralized platform that allows individuals to raise funds for their projects or ventures directly from investors without the need for intermediaries such as banks. Transactions are secured through blockchain technology.",
         image: '/images/1.png',
         tags: ['React', 'Node', 'Solidity', 'Web3', 'Blockchain', 'Ethereum', 'IPFS'],
@@ -12,24 +12,34 @@ export const projects = [
         id: 0,
     },
     {
-        title: 'Friday Social',
-        description: "",
+        title: '#Friday Social',
+        description: friday,
         image: '/images/1.png',
-        tags: ['React', 'Node'],
+        tags: ['Flutter', 'Dart', 'Firebase'],
         link: 'https://github.com/verareyou/FRIDAY_SOCIAL',
         source: 'https://google.com',
         visit: 'https://google.com',
-        id: 6,
+        id: 1,
     },
     {
-        title: 'Friday Social',
-        description: friday,
+        title: '#Vyanjan',
+        description: "# **Desc** \n Developed a web api for a door delivery service.",
         image: '/images/1.png',
-        tags: ['React', 'Node'],
-        link: 'https://google.com',
+        tags: ['Node', 'MongoDB', 'Express', 'Javascript', 'Cors', 'Mongoose'], 
+        link: 'https://github.com/yash-prajapati19/VYANJAN',
         source: 'https://google.com',
         visit: 'https://google.com',
-        id: 5,
+        id: 2,
+    },
+    {
+        title: '#Project Management',
+        description: "# **Desc** \n Developed Graphql API for a project management system and a react frontend with apollo client.",
+        image: '/images/1.png',
+        tags: ['Node', 'MongoDB', 'Express', 'Javascript', 'Graphql', 'Apollo', 'React'], 
+        link: 'https://github.com/verareyou/MGMT-PROJECT',
+        source: 'https://google.com',
+        visit: 'https://google.com',
+        id: 3,
     },
 ];
 export const navlinks = [

@@ -10,7 +10,7 @@ function ProjectPage() {
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.theme);
   return (
-    <div className=" animate-blur-slide-down-10 pt-[7rem] md:pt-[5rem] h-screen p-3 sm:p-6  ">
+    <div className=" animate-blur-slide-down-10 pt-[7rem] sm:pt-[8rem] lg:pt-[5rem] h-screen p-3 sm:p-6  ">
       <div className=" flex flex-col justify-center items-start ">
         <style></style>
         <div
@@ -24,7 +24,7 @@ function ProjectPage() {
         <title>Projects</title>
         <div
           className={
-            ` lg:h-[78vh] h-[73vh] flex w-full flex-col border animate-blur-in justify-start items-start gap-4 sm:gap-4 max-md:flex-col
+            ` lg:h-[78vh] sm:h-[73vh] flex w-full flex-col border animate-blur-in justify-start items-start gap-4 sm:gap-4 max-md:flex-col
              overflow-auto p-3 sm:p-4 rounded-[24px] scrollbar-none ` +
             `${
               theme.mode === "light"
@@ -48,10 +48,16 @@ function ProjectPage() {
             >
               <h1
                 style={{ color: theme.lightText }}
-                className=" text-6xl max-md:text-2xl font-[700] "
+                className=" text-5xl max-md:text-2xl font-[700] "
               >
                 {project.title}
               </h1>
+              {/* <h1
+                style={{ color: theme.lightText }}
+                className=" ml-1 relative left-[98%] top-[-20%] text-xl max-md:text-base font-[400] "
+              >
+                #{project.id + 1}
+              </h1> */}
 
               <div className=" mt-3 sm:mt-6  ">
                 <div
@@ -66,11 +72,12 @@ function ProjectPage() {
                 </div>
                 <div
                   style={{ color: theme.lightText }}
-                  className=" mt-3 text-sm font-[300] "
+                  className=" mt-3 text-sm flex flex-wrap font-[300] "
                 >
                   {project.tags.map((tag) => (
                     <span
-                      className="mr-2 px-2 py-1 rounded-[10px] text-[10px] font-[300] "
+                      key={tag}
+                      className="mr-2 px-2 py-1 my-1 rounded-full text-[10px] font-[300] "
                       style={{
                         backgroundColor:
                           theme.mode === "light" ? "#0000001a" : "#ffffff1a",
