@@ -43,15 +43,15 @@ function Home() {
         style={{
           backgroundColor: theme.primary,
         }}
-        className={" md:text-xl duration-500 after:container md:border p-1 px-5 md:hover:px-6 rounded-full hover:invert hover:blur-[1px] font-light text-sm md:font-semibold " + `${theme.mode === "light" ? "border-[#00000049]" : "border-[#ffffff49]"}`
+        className={" md:text-lg duration-500 after:container md:border p-1 px-5 md:hover:px-6 rounded-full hover:invert hover:blur-[1px] font-light text-sm md:font-semibold " + `${theme.mode === "light" ? "border-[#00000049]" : "border-[#ffffff49]"}`
         }
-        >View all</Link>
+        >See all </Link>
         </div>
         <div className="flex flex-wrap max-md:flex-col gap-3">
         {/* projects */}
           {/* <ProjectCard data={projects[0]} /> */}
+          <ProjectCard data={projects[0]} />
           <ProjectCard data={projects[1]} />
-          <ProjectCard data={projects[2]} />
           <ProjectCard data={projects[2]} />
       </div>
           </div>

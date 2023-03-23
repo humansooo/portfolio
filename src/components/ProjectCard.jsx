@@ -19,12 +19,31 @@ function ProjectCard({ data }) {
     >
       {/* <div></div> */}
       <h1 className=" text-xl font-bold ">{data.title}</h1>
-      <div style={{ color: theme.lightText }} className=" mt-3 text-sm font-[300] ">
+      <div
+        style={{ color: theme.lightText }}
+        className=" mt-3 text-sm font-[400] "
+      >
         <ReactMarkdown
-          children={data.description.slice(0, 110) + "..."}
+          children={data.description}
           remarkPlugins={[remarkGfm]}
         />
         {/* {data.description.slice(0, 100)} */}
+      </div>
+      <div
+        style={{ color: theme.lightText }}
+        className=" mt-3 text-sm font-[300] flex flex-wrap "
+      >
+        {data.tags.map((tag) => (
+          <span
+            className="mr-2 px-2 py-1 rounded-full my-1 text-[10px] font-[300] "
+            style={{
+              backgroundColor:
+                theme.mode === "light" ? "#0000001a" : "#ffffff1a",
+            }}
+          >
+            {tag}
+          </span>
+        ))}
       </div>
       <div className="mt-2 flex flex-row gap-1 items-center  sm:mt-3  ">
         <Socials
@@ -36,10 +55,14 @@ function ProjectCard({ data }) {
         />
         <a
           href={data.link}
+          target="_blank"
           // style={{ color: theme.opText }}
-          className=" hover:text-[#0000006f] translate-y-[1px] opacity-70 duration-200 text-[12px] max-md:text-[12px] font-[300] "
+          className=" hover:text-[#86868683] translate-y-[1px] opacity-70 duration-200 text-[12px] max-md:text-[12px] font-[300] "
         >
-          {data.link}
+          {/* {data.link.slice(0, 4) + "..."} */}
+          {data.link.split("/")[2].split('.')[0]}\
+          {data.link.split("/")[4]}
+
         </a>
       </div>
     </div>
