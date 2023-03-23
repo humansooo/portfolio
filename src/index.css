@@ -15,9 +15,10 @@
 
 /* media queries */
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   #navbar {
     /* height: 100px; */
-    transform: translateX(-50%);
-  }
-}
+    /* transform: translateX(-50%); */
+  /* } */
+/* } */
+
