@@ -57,12 +57,6 @@ function AboutBanner() {
         </div>
       </div>
       </div>
-
-      {/* <div className=" flex justify-center items-center max-sm:pb-6 ">
-        <div className=" sm:h-[200px] sm:w-[200px] h-[100px] w-[100px] rounded-full overflow-clip grayscale ">
-          <img src={aboutMe.image} alt="image" className=" " />
-        </div>
-      </div> */}
     </div>
   );
 }
