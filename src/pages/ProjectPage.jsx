@@ -10,7 +10,7 @@ function ProjectPage() {
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.theme);
   return (
-    <div className=" animate-blur-slide-down-10 pt-[7rem] sm:pt-[8rem] lg:pt-[8rem] p-3 sm:p-6  ">
+    <div className=" animate-blur-slide-down-10 pt-[7rem] sm:pt-[8rem] lg:pt-[5rem] p-3 sm:p-6  ">
       <div className=" flex flex-col justify-center items-start ">
         <style></style>
         <div
