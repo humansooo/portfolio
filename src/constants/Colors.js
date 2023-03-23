@@ -1,5 +1,6 @@
 export const darkTheme = {
     primary: '#212121',
+    lowPrimary: '#21212177',
     oppPrimary: '#eaeaea',
     background: '#000',
     secondary: '#ff9800',
@@ -14,6 +15,7 @@ export const darkTheme = {
 
 export const lightTheme = {
     primary: '#eee',
+    lowPrimary: '#eeeeee77',
     oppPrimary: '#181818',
     background: '#eee',
     secondary: '#ff6f00',

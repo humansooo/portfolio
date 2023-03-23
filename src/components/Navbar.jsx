@@ -11,6 +11,7 @@ function Navbar() {
   const theme = useSelector((state) => state.theme);
   const [isActive, setIsActive] = useState("home");
   const navigate = useNavigate();
+  const [isWeb, setIsWeb] = useState(window.innerWidth > 900);
 
   useEffect(() => {
     const url = window.location.href;
@@ -22,13 +23,14 @@ function Navbar() {
 
   // show navbar on scroll down
   useEffect(() => {
+    setIsWeb(window.innerWidth > 900);
     const navbar = document.querySelector(".navBar");
     // navbar.classList.add("animate-blur-slide-down");
     const navbarHeight = navbar.offsetHeight;
     let lastScrollTop = 0;
     window.addEventListener("scroll", () => {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if (window.innerWidth > 768) return;
+      if (isWeb) return;
       if (scrollTop > lastScrollTop && scrollTop > navbarHeight + 100) {
         navbar.classList.add("translate-y-[-120%]");
         navbar.classList.remove("translate-y-0");
@@ -44,7 +46,9 @@ function Navbar() {
     <div
       id="navbar"
       style={{
-        background: theme.mode === "light" ? window.innerWidth > 800 ?  "#ffffff77" : "#efefef77" : window.innerWidth > 800 ?  "#30303088" : "#21212188",
+        background: theme.mode === "light" ? isWeb ?  "#ffffff77" : theme.lowPrimary : isWeb ? "#30303088" : theme.lowPrimary,
+        // opacity: window.innerWidth > 800 ? 1 : 0.7,
+        // backdropFilter: "blur(6px)",
         // boxShadow: `0px 0px 10px 0px ${theme.primary}`,
       }}
       className=" flex navBar flex-row max-lg:flex-col justify-between backdrop-blur-[5px] md:shadow-xl md:shadow-[#2626260d] duration-300 gap-3 z-[999] scale-100 lg:left-[calc(10%)]
