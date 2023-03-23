@@ -11,7 +11,7 @@ function App() {
   return (
     <div
       style={{ background: theme.primary, color: theme.text }}
-      className="App duration-300  overflow-x-hidden "
+      className="App duration-300 min-h-screen overflow-x-hidden "
     >
       {/* <head> */}
 
@@ -21,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<ProjectPage />} />
+          {/* <Route path="/projects/:id" element={< />} /> */}
           <Route path="/Contact" element={<ContactPage />} />
           <Route path="/about" element={<AboutPage />} />
           {/* error page */}
