@@ -11,7 +11,7 @@ function ProjectCard({ data }) {
   return (
     <div
       className={
-        " p-4 border flex-col flex-1 h-min flex rounded-[20px] " +
+        " p-4 border flex-col flex-1 md:h-min flex rounded-[20px] " +
         `${
           theme.mode === "light" ? "border-[#00000049]" : "border-[#ffffff49]"
         }`
@@ -19,7 +19,7 @@ function ProjectCard({ data }) {
     >
       {/* <div></div> */}
       <h1 className=" text-xl font-bold ">{data.title}</h1>
-      <p style={{ color: theme.lightText }} className=" mt-3 ">
+      <p style={{ color: theme.lightText }} className=" mt-3 text-sm font-[300] ">
         <ReactMarkdown
           children={data.description.slice(0, 110) + "..."}
           remarkPlugins={[remarkGfm]}
@@ -37,7 +37,7 @@ function ProjectCard({ data }) {
         <a
           href={data.link}
           // style={{ color: theme.opText }}
-          className=" hover:text-[#0000006f] translate-y-[1px] opacity-70 duration-200 text-[12px] max-md:text-[12px] font-[400] "
+          className=" hover:text-[#0000006f] translate-y-[1px] opacity-70 duration-200 text-[12px] max-md:text-[12px] font-[300] "
         >
           {data.link}
         </a>
