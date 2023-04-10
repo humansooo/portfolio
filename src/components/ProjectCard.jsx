@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import NavButton from "./NavButton";
+import TitleButton from "./TitleButton";
 
 function ProjectCard({ data }) {
   const theme = useSelector((state) => state.theme);
@@ -17,8 +18,8 @@ function ProjectCard({ data }) {
         }`
       }
     >
-      {/* <div></div> */}
-      <h1 style={{color: theme.text}} className=" text-xl font-bold ">{data.title}</h1>
+      {/* <h1 style={{color: theme.text}} className=" text-xl font-bold ">{data.title}</h1> */}
+      <TitleButton project={data} small={true} theme={theme} />
       <div
         style={{ color: theme.lightText }}
         className=" mt-3 text-sm font-[400] "

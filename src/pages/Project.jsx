@@ -2,24 +2,27 @@ import React from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
-import { randomColor } from '../utils';
 import { RandomReveal } from 'react-random-reveal';
-import { aboutMe } from '../data';
 
 const Project = () => {
-  const state = aboutMe;
   const navigation = useNavigate();
+  const { state } = useLocation();
 
-  // const theme = useSelector((state) => state.theme)
+
+  const theme = useSelector((state) => state.theme)
   return (
-    <div className=' zoom-in bg-[#101214] sticky h-screen z-[99999] pt-[7rem] p-3 sm:p-24 sm:px-44 flex-grow '>
-      <div className=" text-[#ddd] relative h-full"
+    <div
+      style={{ background: theme.primary, color: theme.text }}
+     className=' zoom-in sticky h-screen z-[99999] pt-[7rem] p-3 sm:p-24 sm:px-44 flex-grow '>
+      <div className=" text-[#ddd] pl-2 h-full md:relative "
       >
         <div
-          onClick={() => navigation('/')}
-          className="absolute hover:rotate-[calc(360*2deg)] back-button cursor-pointer duration-150 translate-x-[-10%] bottom-0 left-0 w-10 h-10 flex items-center justify-center text-2xl font-bold text-[#101214] bg-[#ddd] rounded-full"
+          style={{ background: theme.primary }}
+          onClick={() => window.history.back()}
+          className="absolute hover:rotate-[calc(360*2deg)] back-button cursor-pointer duration-150 md:translate-x-[-10%] max-md:top-4 md:bottom-0 md:left-0 left-4 w-10 h-10 flex items-center justify-center text-2xl font-bold text-[#101214] rounded-full"
         >{'<'}</div>
         <h1
+          style={{ color: theme.text }}
           className="text-7xl max-md:text-5xl font-[700] cursor-pointer "
         >
           <RandomReveal
@@ -31,6 +34,7 @@ const Project = () => {
         </h1>
 
         <p
+          style={{ color: theme.text }}
           className="text-[#959595] text-2xl max-md:text-sm font-[400] mt-20 "
         >
           <ReactMarkdown
@@ -39,15 +43,15 @@ const Project = () => {
         </p>
 
         <div className="flex overflow-clip flex-wrap mt-10 flex-row gap-3">
-          {state.skills.map((tag) => (
+          {state.tags.map((tag) => (
             <div
               key={tag}
               style={{
-                color: `#cccccc${Math.random().toFixed(2) * 50 + 50}`,
+                color: `#333333${Math.floor(Math.random() * 70 + 30)}`,
                 // color: 'transparent',
                 // stroke: `${randomColor().text}`,
               }}
-              className=" text-2xl max-md:text-sm font-[900] "
+              className={" text-2xl max-md:text-sm font-[900] " + (theme.mode === 'dark' ? 'invert' : ''  )}
             >
 
               {tag}
@@ -57,11 +61,17 @@ const Project = () => {
         </div>
 
         <a
-        href={state.contact}
+        href={state.link}
+        style={{ color: theme.text }}
         target="_blank"
         className="flex w-fit hover:bg-black hover:invert duration-150 font-light hover:pr-56 mt-10 gap-4 items-center flex-row">
+          <img
+            src='https://www.svgrepo.com/show/507321/github.svg'
+            alt="project"
+            className={"w-[28px] h-[28px] " + (theme.mode === 'dark' ? 'invert' : '')}
+          />
           <h1 className="text-2xl max-md:text-sm">
-            gmail/{state.contact}
+            github/{state.link.split('/')[3]}
           </h1>
         </a>
 

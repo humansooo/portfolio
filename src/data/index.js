@@ -64,14 +64,14 @@ export const navlinks = [
         title: 'About',
         path: '/About',
         id: 1,
-        enable: false,
+        enable: true,
         data: [],
     },
     {
         title: 'Blog',
         path: '/Blog',
         id: 1,
-        enable: true,
+        enable: false,
         data: [],
     },
     {
@@ -96,7 +96,7 @@ export const aboutMe = {
     description: "I'm a Full Stack Developer, Blockchain Developer, and a Flutter Developer. I'm currently working on Thirdweb, a decentralized social media platform. I'm also working on a few other projects. I'm a self-taught developer and I'm always learning new things. I'm also a big fan of open-source.",
     image: 'https://pbs.twimg.com/profile_images/1611310553603137537/4Mxh61P9_400x400.jpg',
     skills: ['React', 'Node', 'Solidity', 'Flutter', 'Web3', 'Dart', 'Thirdweb','TailWind',],
-    contact: {},
+    contact: 'himanshuforpro@gmail.com',
     id: 0,
 };
 

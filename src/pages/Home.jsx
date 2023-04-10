@@ -16,13 +16,13 @@ function Home() {
     <>
       <title>Himanshu Suthar</title>
 
-      <div className=" mt-[7rem] lg:mt-[4rem] px-3 sm:px-6 pt-3 sm:pt-6 animate-blur-slide-down-10 ">
+      <div className=" mt-[7rem] lg:mt-[4rem] px-3 sm:px-6 pt-3 sm:pt-6 ">
         <AboutBanner />
       </div>
 
       <div
         className={
-          " mt-3 sm:mt-3 sm:mx-6 mb-6 mx-3 border-0 flex flex-col gap-3 rounded-[24px] animate-blur-slide-down-10 " 
+          " mt-3 sm:mt-3 sm:mx-6 mb-6 mx-3 border-0 flex flex-col gap-3 rounded-[24px] " 
           +`${theme.mode === "light" ? "border-[#00000049]" : "border-[#ffffff49]"}`
         }
         >

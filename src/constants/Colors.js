@@ -14,7 +14,7 @@ export const darkTheme = {
 }
 
 export const lightTheme = {
-    primary: '#eee',
+    primary: '#e5e5e5',
     lowPrimary: '#eeeeee77',
     oppPrimary: '#181818',
     background: '#eee',

@@ -5,3 +5,4 @@ export { default as AboutPage } from './AboutPage';
 export { default as NotFound } from './NotFound.jsx';
 export { default as BlogDisplay } from './BlogDisplay.jsx';
 export { default as BlogsPage } from './BlogsPage.jsx';
+export { default as Project } from './Project.jsx';

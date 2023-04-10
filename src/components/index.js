@@ -5,3 +5,5 @@ export { default as Socials } from './Socials';
 export { default as AboutBanner } from './AboutBanner';
 export { default as ProjectCard } from './ProjectCard';
 export { default as AlertBanner } from './AlertBanner';
+export { default as ProjectsList } from './ProjectsList';
+export { default as TitleButton } from './TitleButton';
