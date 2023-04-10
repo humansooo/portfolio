@@ -13,17 +13,17 @@ const Project = () => {
   return (
     <div
       style={{ background: theme.primary, color: theme.text }}
-     className=' zoom-in sticky h-screen z-[99999] pt-[7rem] p-3 sm:p-24 sm:px-44 flex-grow '>
+     className=' zoom-in sticky h-screen z-[99999] pt-28 p-10 sm:p-24 sm:px-44 flex-grow '>
       <div className=" text-[#ddd] pl-2 h-full md:relative "
       >
         <div
           style={{ background: theme.primary }}
           onClick={() => window.history.back()}
-          className="absolute hover:rotate-[calc(360*2deg)] back-button cursor-pointer duration-150 md:translate-x-[-10%] max-md:top-4 md:bottom-0 md:left-0 left-4 w-10 h-10 flex items-center justify-center text-2xl font-bold text-[#101214] rounded-full"
+          className="absolute hover:rotate-[calc(360*2deg)] back-button cursor-pointer duration-150 md:translate-x-[-10%] max-md:top-10 md:bottom-0 md:left-0 left-6 w-10 h-10 flex items-center justify-center text-2xl font-bold text-[#101214] rounded-full"
         >{'<'}</div>
         <h1
           style={{ color: theme.text }}
-          className="text-7xl max-md:text-5xl font-[700] cursor-pointer "
+          className="text-7xl max-md:text-3xl font-[700] cursor-pointer "
         >
           <RandomReveal
             characters={state.title}
@@ -35,7 +35,7 @@ const Project = () => {
 
         <p
           style={{ color: theme.text }}
-          className="text-[#959595] text-2xl max-md:text-sm font-[400] mt-20 "
+          className="text-[#959595] text-2xl max-md:text-sm font-[400] mt-14 "
         >
           <ReactMarkdown
 

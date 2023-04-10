@@ -10,16 +10,19 @@ const Project = () => {
   const state = aboutMe;
   const navigation = useNavigate();
 
-  // const theme = useSelector((state) => state.theme)
+  const theme = useSelector((state) => state.theme)
   return (
-    <div className=' zoom-in bg-[#101214] sticky h-screen z-[99999] pt-[7rem] p-3 sm:p-24 sm:px-44 flex-grow '>
-      <div className=" text-[#ddd] relative h-full"
+    <div
+    style={{ background: theme.primary, color: theme.text }}
+    className=' zoom-in sticky h-screen z-[99999] pt-28 p-10 sm:p-24 sm:px-44 flex-grow '>
+      <div className=" md:relative h-full"
       >
         <div
           onClick={() => navigation('/')}
-          className="absolute hover:rotate-[calc(360*2deg)] back-button cursor-pointer duration-150 translate-x-[-10%] bottom-0 left-0 w-10 h-10 flex items-center justify-center text-2xl font-bold text-[#101214] bg-[#ddd] rounded-full"
+          className="absolute hover:rotate-[calc(360*2deg)] back-button cursor-pointer duration-150 md:translate-x-[-10%] max-md:top-10 md:bottom-0 md:left-0 left-5 w-10 h-10 flex items-center justify-center text-2xl font-bold text-[#101214] rounded-full"
         >{'<'}</div>
         <h1
+          style={{ color: theme.text }}
           className="text-7xl max-md:text-5xl font-[700] cursor-pointer "
         >
           <RandomReveal
@@ -31,7 +34,8 @@ const Project = () => {
         </h1>
 
         <p
-          className="text-[#959595] text-2xl max-md:text-sm font-[400] mt-20 "
+          style={{ color: theme.text }}
+          className="text-[#959595] text-2xl max-md:text-sm font-[400] mt-14 "
         >
           <ReactMarkdown
 
@@ -43,9 +47,7 @@ const Project = () => {
             <div
               key={tag}
               style={{
-                color: `#cccccc${Math.random().toFixed(2) * 50 + 50}`,
-                // color: 'transparent',
-                // stroke: `${randomColor().text}`,
+                color: `#333333${Math.floor(Math.random() * 70 + 30)}`,
               }}
               className=" text-2xl max-md:text-sm font-[900] "
             >
@@ -57,6 +59,7 @@ const Project = () => {
         </div>
 
         <a
+        style={{ color: theme.text }}
         href={state.contact}
         target="_blank"
         className="flex w-fit hover:bg-black hover:invert duration-150 font-light hover:pr-56 mt-10 gap-4 items-center flex-row">
