@@ -3,6 +3,7 @@ import { aboutMe } from "../data";
 import { useSelector } from "react-redux";
 import { randomColor } from "../utils";
 import NavButton from "./NavButton";
+import { RandomReveal } from "react-random-reveal";
 
 function AboutBanner() {
   const theme = useSelector((state) => state.theme);
@@ -32,7 +33,11 @@ function AboutBanner() {
             // style={{ color: randomColor().color }}
             className=" text-6xl max-md:text-3xl font-[900] "
           >
-            {aboutMe.title}'
+            <RandomReveal
+              isPlaying
+              duration={0.6}
+            characters={`${aboutMe.title}'`}
+            />
           </h1>
         </div>
         <div className=" mt-6  ">
