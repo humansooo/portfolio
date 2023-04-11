@@ -19,7 +19,8 @@ const Project = () => {
       >
         <div
           onClick={() => navigation('/')}
-          className="absolute hover:rotate-[calc(360*2deg)] back-button cursor-pointer duration-150 md:translate-x-[-10%] max-md:top-10 md:bottom-0 md:left-0 left-5 w-10 h-10 flex items-center justify-center text-2xl font-bold text-[#101214] rounded-full"
+          style={{ color: theme.text }}
+          className="absolute hover:rotate-[calc(360*2deg)] back-button cursor-pointer duration-150 md:translate-x-[-10%] max-md:top-10 md:bottom-0 md:left-0 left-5 w-10 h-10 flex items-center justify-center text-2xl font-bold rounded-full"
         >{'<'}</div>
         <h1
           style={{ color: theme.text }}
@@ -49,11 +50,9 @@ const Project = () => {
               style={{
                 color: `#333333${Math.floor(Math.random() * 70 + 30)}`,
               }}
-              className=" text-2xl max-md:text-sm font-[900] "
+              className={" text-2xl max-md:text-sm font-[900] " + (theme.mode === 'dark' ? 'invert' : ''  )}
             >
-
               {tag}
-
             </div>
           ))}
         </div>
