@@ -30,7 +30,7 @@ function NavButton({ theme, to, text, icon, onClick, length, isActive, invert, t
                 : "border-[#5b5b5b] sm:hover:border-[#c3c3c3]"
             }` +
             ` ${length && "px-6 border-none bg-[#ff6f00]"}` +
-            ` ${isActive && isActive === text && "border-[#ff6f00]"}` +  ` ${invert && "border-[#ffffff3f] sm:hover:border-[#ffffffa9]"}`
+            ` ${isActive && isActive.toLocaleLowerCase() === text.toLocaleLowerCase() && "border-[#ff6f00]"}` +  ` ${invert && "border-[#ffffff3f] sm:hover:border-[#ffffffa9]"}`
 
           }
         >
