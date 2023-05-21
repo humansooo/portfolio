@@ -3,13 +3,23 @@ const friday = '# **Files** \n StackEdit stores your files in your browser, whic
 export const projects = [
     {
         title: '#CrowdFunding',
+        description: "#Desc \n Social Media platform where People can share their art and photo. \n Creative UI/UX design and animations with React.",
+        image: '/images/1.png',
+        tags: ['React', 'TailwindCSS', 'Firebase', 'FramerMotion', 'TypeScript'],
+        link: 'https://github.com/verareyou/firebase_social',
+        source: 'https://google.com',
+        visit: 'https://google.com',
+        id: 0,
+    },
+    {
+        title: '#CrowdFunding',
         description: "# **Brief** \n The perfect decentralized platform that allows individuals to raise funds for their projects or ventures directly from investors without the need for intermediaries such as banks. Transactions are secured through blockchain technology.",
         image: '/images/1.png',
         tags: ['React', 'Node', 'Solidity', 'Web3', 'Blockchain', 'Ethereum', 'IPFS'],
         link: 'https://github.com/verareyou/CROWDFUNDING_WEB3',
         source: 'https://google.com',
         visit: 'https://google.com',
-        id: 0,
+        id: 1,
     },
     {
         title: '#Friday Social',
@@ -19,7 +29,7 @@ export const projects = [
         link: 'https://github.com/verareyou/FRIDAY_SOCIAL',
         source: 'https://google.com',
         visit: 'https://google.com',
-        id: 1,
+        id: 2,
     },
     {
         title: '#Vyanjan',
@@ -29,7 +39,7 @@ export const projects = [
         link: 'https://github.com/yash-prajapati19/VYANJAN',
         source: 'https://google.com',
         visit: 'https://google.com',
-        id: 2,
+        id: 3,
     },
     {
         title: '#Project Management',
@@ -39,7 +49,7 @@ export const projects = [
         link: 'https://github.com/verareyou/MGMT-PROJECT',
         source: 'https://google.com',
         visit: 'https://google.com',
-        id: 3,
+        id: 4,
     },
     {
         title: '#Portfolio',
@@ -49,7 +59,7 @@ export const projects = [
         link: 'https://github.com/verareyou/MGMT-PROJECT',
         source: 'https://google.com',
         visit: 'https://google.com',
-        id: 4,
+        id: 5,
     },
 ];
 export const navlinks = [
