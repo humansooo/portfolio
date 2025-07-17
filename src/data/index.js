@@ -3,16 +3,6 @@ const friday = '# **Files** \n StackEdit stores your files in your browser, whic
 export const projects = [
     {
         title: '#CrowdFunding',
-        description: "#Desc \n Social Media platform where People can share their art and photo. \n Creative UI/UX design and animations with React.",
-        image: '/images/1.png',
-        tags: ['React', 'TailwindCSS', 'Firebase', 'FramerMotion', 'TypeScript'],
-        link: 'https://github.com/verareyou/firebase_social',
-        source: 'https://google.com',
-        visit: 'https://google.com',
-        id: 0,
-    },
-    {
-        title: '#CrowdFunding',
         description: "# **Brief** \n The perfect decentralized platform that allows individuals to raise funds for their projects or ventures directly from investors without the need for intermediaries such as banks. Transactions are secured through blockchain technology.",
         image: '/images/1.png',
         tags: ['React', 'Node', 'Solidity', 'Web3', 'Blockchain', 'Ethereum', 'IPFS'],
@@ -103,9 +93,9 @@ export const navlinks = [
 
 export const aboutMe = {
     title: 'Himanshu Suthar',
-    description: "I'm a Full Stack Developer, Blockchain Developer, and a Flutter Developer. I'm currently working on Thirdweb, a decentralized social media platform. I'm also working on a few other projects. I'm a self-taught developer and I'm always learning new things. I'm also a big fan of open-source.",
+    description: "I'm a Full Stack Developer and a React Native Developer. I'm currently working in Faebikes. I'm also working on a few other projects. I'm a self-taught developer and I'm always learning new things.",
     image: 'https://pbs.twimg.com/profile_images/1611310553603137537/4Mxh61P9_400x400.jpg',
-    skills: ['React', 'Node', 'Solidity', 'Flutter', 'Web3', 'Dart', 'Thirdweb','TailWind',],
+    skills: ['React', 'Node', 'React Native', 'Typescript','TailWind',],
     contact: 'himanshuforpro@gmail.com',
     id: 0,
 };
